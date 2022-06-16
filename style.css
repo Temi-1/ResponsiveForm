@@ -1,0 +1,108 @@
+:root {
+    --red: hsl(0, 100%, 74%); 
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --dark-blue: hsl(249, 10%, 26%); 
+    --gray-blue: hsl(246, 25%, 77%);
+    --light-gray: rgb(243, 239, 240);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: var(--red);
+    background-image: url(/images/bg-intro-mobile.png);
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 4em auto;
+    max-width: 90%;
+}
+.text-cont h1 {
+    color: var(--light-gray);
+    font-weight: 700;
+    padding-bottom: .75em;
+}
+.text-cont p {
+    color: rgb(216, 216, 216);
+    font-weight: 600;
+    padding-bottom: 3em;
+}
+/* .right-cont {
+    display: flex;
+} */
+.try-it {
+    background-color: rgb(116, 30, 197);
+    color: var(--light-gray);
+    padding: 1em 3em;
+    border-radius: .5em;
+    box-shadow: 0em .35em rgba(5, 5, 5, 0.15);
+}
+.try-it span {
+    font-weight: 700;
+}
+.form-cont {
+    margin-top: 1.5em;
+    background-color: rgb(255, 255, 255);
+    border-radius: .75em;
+    padding: 2em;
+}
+.input-field {
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 1px solid var(--gray-blue);
+    border-radius: .35em;
+    color: var(--dark-blue);
+    font-weight: 600;
+}
+.btn {
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1.25em;
+    border-radius: .5em;
+    border: none;
+    background-color: var(--green);
+    box-shadow: 0em .35em hsla(154, 59%, 33%, 0.836);
+}
+.btn a {
+    text-decoration: none;
+    color: var(--light-gray);
+    font-weight: 600;
+}
+.t-c {
+    color: var(--gray-blue);
+    font-size: .75em;
+    font-weight: 400;
+    margin-bottom: 2em;
+}
+.t-c span {
+    color: var(--red);
+    font-weight: 600;
+}
+@media screen and (min-width: 900px) {
+    .wrapper {
+        flex-direction: row;
+        height: 100vh;
+        max-width: 80%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-cont {
+        width: 100%;
+        padding-right: 3em;
+        text-align: start;
+    }
+    .text-cont h1 {
+        font-size: 3em;
+    }
+    .right-cont {
+        width: 100%;
+    }
+}
