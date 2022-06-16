@@ -13,7 +13,7 @@
 }
 body {
     background: var(--red);
-    background-image: url(/images/bg-intro-mobile.png);
+    background-image: url(./images/bg-intro-mobile.png);
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 .wrapper {
