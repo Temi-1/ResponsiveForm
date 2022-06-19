@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
   </head>
   <body>
     <main>
@@ -29,50 +28,62 @@
             </p>
           </div>
           <div class="form-cont">
-            <form action="submit">
-              <div>
+            <form id="form">
+              <div class="form-control">
                 <label for="fname"></label>
                 <input
                   class="input-field"
+                  id="fname"
                   type="text"
                   name="fname"
                   placeholder="First Name"
                   required
                 />
+                <img id="fname-error-svg" src="./images/icon-error.svg" alt="" hidden>
+                <small id="fname-error"></small>
               </div>
-              <div>
+              <div class="form-control">
                 <label for="lname"></label>
                 <input
                   class="input-field"
+                  id="lname"
                   type="text"
                   name="lname"
                   placeholder="Last Name"
                   required
                 />
+                <img id="lname-error-svg" src="./images/icon-error.svg" alt="" hidden>
+                <small id="lname-error"></small>
               </div>
-              <div>
+              <div class="form-control">
                 <label for="email"></label>
                 <input
                   class="input-field"
+                  id="email"
                   type="email"
                   name="email"
                   placeholder="Email Address"
                   required
                 />
+                <img id="email-error-svg" src="./images/icon-error.svg" alt="" hidden>
+                <small id="email-error"></small>
               </div>
-              <div>
+              <div class="form-control">
                 <label for="pwd"></label>
                 <input
                   class="input-field"
+                  id="password"
                   type="password"
                   name="pwd"
                   placeholder="Password"
                   required
                 />
+                <img id="pwd-error-svg" src="./images/icon-error.svg" alt="" hidden>
+                <small id="pwd-error"></small>
               </div>
               <div>
-                <button class="btn">
-                  <a href="">CLAIM YOUR FREE TRIAL</a>
+                <button onclick="formValidate()" class="btn">
+                  CLAIM YOUR FREE TRIAL
                 </button>
               </div>
               <div class="t-c">
@@ -86,5 +97,6 @@
         </div>
       </div>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>

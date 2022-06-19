@@ -33,9 +33,6 @@ body {
     font-weight: 600;
     padding-bottom: 3em;
 }
-/* .right-cont {
-    display: flex;
-} */
 .try-it {
     background-color: rgb(116, 30, 197);
     color: var(--light-gray);
@@ -52,14 +49,35 @@ body {
     border-radius: .75em;
     padding: 2em;
 }
+.form-control {
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    position: relative;
+}
 .input-field {
     width: 100%;
     padding: 1em;
-    margin-bottom: 1em;
+    display: block;
     border: 1px solid var(--gray-blue);
     border-radius: .35em;
     color: var(--dark-blue);
     font-weight: 600;
+}
+.form-control img {
+    position: absolute;
+    top: .6em;
+    right: .5em;
+}
+.form-control small {
+    color: var(--red);
+    position: absolute;
+    font-style: italic;
+    right: 0;
+    top: 3.5em;
+}
+.input-field:focus {
+    outline: 0;
+    border-color: var(--red);
 }
 .btn {
     width: 100%;
@@ -67,13 +85,14 @@ body {
     margin-bottom: 1.25em;
     border-radius: .5em;
     border: none;
+    color: var(--light-gray);
+    font-weight: 600;
     background-color: var(--green);
     box-shadow: 0em .35em hsla(154, 59%, 33%, 0.836);
 }
-.btn a {
-    text-decoration: none;
-    color: var(--light-gray);
-    font-weight: 600;
+.btn:hover {
+    background-color: hsl(154, 57%, 65%);
+    box-shadow: 0 .35em hsla(154, 29%, 55%, 0.719);
 }
 .t-c {
     color: var(--gray-blue);
